@@ -1,0 +1,169 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!--  -->
+        <header class="bg-info h-75">
+            Liên hệ
+        </header>
+        <!--  -->
+
+        <!--  -->
+        <nav class="navbar navbar-expand-lg bg-light mt-2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Duy Đức</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--  -->
+        <section>
+            <!-- QLND -->
+          <div class="container">
+
+            <div class="row">
+              <div class="col-10 offset-1">
+                <div class="row mt-5">
+                  <div class="col-3">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      + Thêm Mới
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                      aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header bg-black ">
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Thêm Mới Người Dùng</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="card-body">
+                              <form action="">
+                                <div class="form-group">
+                                  <label for="">USERNAME</label>
+                                  <input type="text" class="form-control mt-2" name="" id="" placeholder="Username">
+                                </div>
+                                <div class="form-group mt-3">
+                                  <label for="">PASSWORD</label>
+                                  <input type="password" class="form-control mt-2" name="" id="" placeholder="Password">
+                                </div>
+                                <div class="form-group mt-3">
+                                  <label for="">FULLNAME</label>
+                                  <input type="text" class="form-control mt-2" name="" id="" placeholder="Password">
+                                </div>
+                                <div class="form-group mt-3">
+                                  <label for="">EMAIL</label>
+                                  <input type="email" class="form-control mt-2" name="" id="" placeholder="Password">
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-success">Create</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mt-3">
+                  <h5 class="card-header">Quản Lý Người Dùng</h5>
+                  <div class="table-responsive">
+                    <table class="table table-dark table-striped">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Phone number</th>
+                          <th>Register Date</th>
+                          <th>status</th>
+                          <th colspan="2" class="text-center">Thao Tác</th>
+                        </tr>
+                      </thead>
+                      <tbody class="table-border-bottom-0">
+                        <tr>
+                          <td>ducpro123</td>
+                          <td>Nguyễn Duy Đức</td>
+                          <td>ducndph16372@gmail.com</td>
+                          <td>035412589</td>
+                          <td>25/12/2022</td>
+                          <td>hoạt động</td>
+                          <td>
+                            <a href="" class="btn btn-warning text-white">Sửa</a>
+                          </td>
+                          <td>
+                            <a href="" class="btn btn-danger text-white">Xóa</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- QLND -->
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
